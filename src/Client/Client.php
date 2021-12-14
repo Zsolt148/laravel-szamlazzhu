@@ -717,7 +717,7 @@ class Client
                 {
                     $this->writeCredentials($writer);
                     $writer->writeElement('eszamla', $this->stringifyBoolean($invoice->isElectronic));
-                    $writer->writeElement('kulcstartojelszo', '');
+                    //$writer->writeElement('kulcstartojelszo', '');
                     $writer->writeElement('szamlaLetoltes', $this->stringifyBoolean(!$withoutPdf));
                     $writer->writeElement('valaszVerzio', 2);
                     $writer->writeElement('aggregator', '');
@@ -960,7 +960,7 @@ class Client
                 {
                     $this->writeCredentials($writer);
                     $writer->writeElement('eszamla', $this->stringifyBoolean($invoice->isElectronic));
-                    $writer->writeElement('kulcstartojelszo', '');
+                    //$writer->writeElement('kulcstartojelszo', '');
                     $writer->writeElement('szamlaLetoltes', $this->stringifyBoolean(false));
                     $writer->writeElement('szamlaLetoltesPld', 1);
                 }
@@ -1020,7 +1020,7 @@ class Client
                     {
                         $this->writeCredentials($writer);
                         $writer->writeElement('eszamla', $this->stringifyBoolean($invoice->isElectronic));
-                        $writer->writeElement('kulcstartojelszo', '');
+                        //$writer->writeElement('kulcstartojelszo', '');
                         $writer->writeElement('szamlaLetoltes', $this->stringifyBoolean(true));
                         $writer->writeElement('szamlaLetoltesPld', 1);
                     }
